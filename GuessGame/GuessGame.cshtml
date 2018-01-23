@@ -2,8 +2,8 @@
 	<body> 
 		@{
 			if (IsPost) { 
-				string num1 = Request["num1"]; 
-				string num2 = Request["num2"]; 
+				int num1 = Request["num1"]; 
+				int num2 = Request["num2"]; 
 				<p>You entered: <br />
 				Player 1 Entered: @num1 <br />
 				Plaer 2 Entered: @num2 </p>
@@ -13,9 +13,9 @@
 			<form method="post" action="">
 				<h1> Welcome to my wonderful game of guess!</h1>
 				Player 1: Enter a number[0-10] <br />
-				<input type="text" name="num1" value="" /><br />
+				<input type="number" name="num1" value="" /><br />
 				Player 2: Guess the number <br />
-				<input type="text" name="num2" value="" /><br /><br />
+				<input type="number" name="num2" value="" /><br /><br />
 				<input type="submit" value="Submit" class="submit" />
 			</form>
 		}
