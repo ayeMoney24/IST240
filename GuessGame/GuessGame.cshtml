@@ -1,12 +1,14 @@
 <html>
 	<body> 
 		@{
-			if (num1 == "5") { 
+			if (IsPost) { 
+				if (num1 == "5"){
 				string num1 = Request["num1"]; 
 				string num2 = Request["num2"]; 
 				<p>You entered: <br />
 				Player 1 Entered: @num1 <br />
 				Plaer 2 Entered: @num2 </p>
+				}
 		}
 		else
 		{
