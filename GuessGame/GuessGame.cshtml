@@ -4,7 +4,8 @@
 			if (IsPost) { 
 				string num1 = Request["num1"]; 
 				string num2 = Request["num2"]; 
-				
+				int newNum1 = Int32.Parse(num1);
+				int newNum2 = Int32.Parse(num2);
 				<p>You entered: <br />
 				Player 1 Entered: @num1 <br />
 				Plaer 2 Entered: @num2 </p>
